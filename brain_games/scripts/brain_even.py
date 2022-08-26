@@ -2,6 +2,7 @@ import prompt
 from random import randint
 from brain_games import name
 
+
 def rules():
     print('Answer "yes" if the number is even, otherwise answer "no".')
 
