@@ -99,3 +99,31 @@ def brain_gcd():
 Let's try again, {name}!''')
             return
     print(f'Congratulations, {name}!')
+
+
+def brain_progression():
+    name = welcome_user()
+    print('What number is missing in the progression?')
+    counter = (1, 2, 3)
+    for i in counter:
+        item_position = randint(0, 9)
+        first_number = randint(0, 20)
+        regularity = randint(1, 15)
+        arithmetic_progression = ''
+        counter = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+        for i in counter:
+            arithmetic_progression += str(first_number) + ' '
+            first_number += regularity
+        arithmetic_progression = arithmetic_progression.split()
+        correct_answer = arithmetic_progression[item_position]
+        arithmetic_progression[item_position] = '..'
+        arithmetic_progression = ' '.join(arithmetic_progression)
+        print(f'Question: {arithmetic_progression}')
+        answer = answers()
+        if str(answer) == (correct_answer):
+            print('Correct!')
+        else:
+            print(f''''{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.
+Let's try again, {name}!''')
+            return
+    print(f'Congratulations, {name}!')
