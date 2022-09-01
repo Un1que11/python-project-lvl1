@@ -25,4 +25,7 @@ brain-calc:
 brain-gcd:
 	poetry run brain-gcd
 
+reinstall:
+	pip install --user --force-reinstall dist/*.whl
+
 
