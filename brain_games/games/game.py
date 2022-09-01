@@ -54,7 +54,7 @@ def brain_even():
                   f"Correct answer was '{correct_answer}'.\n"
                   f"Let's try again, {name}!")
             return
-    print(f'Congratulations {name}!')
+    print(f'Congratulations, {name}!')
 
 
 def brain_calc():
