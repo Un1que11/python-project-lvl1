@@ -50,8 +50,9 @@ def brain_even():
             print('Correct!')
             i += 1
         else:
-            print(f'''"{answer}" is wrong answer ;(. Correct answer was "{correct_answer}".
-Let's try again, {name}!''')
+            print(f"'{answer}' is wrong answer ;(. "
+                  f"Correct answer was '{correct_answer}'.\n"
+                  f"Let's try again, {name}!")
             return
     print(f'Congratulations {name}!')
 
@@ -67,8 +68,9 @@ def brain_calc():
             print('Correct!')
             i += 1
         else:
-            print(f''''{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.
-Let's try again, {name}!''')
+            print(f"'{answer}' is wrong answer ;(. "
+                  f"Correct answer was '{correct_answer}'.\n"
+                  f"Let's try again, {name}!")
             return
     print(f'Congratulations, {name}!')
 
@@ -92,8 +94,9 @@ def brain_gcd():
             print('Correct!')
             i += 1
         else:
-            print(f''''{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.
-Let's try again, {name}!''')
+            print(f"'{answer}' is wrong answer ;(. "
+                  f"Correct answer was '{correct_answer}'.\n"
+                  f"Let's try again, {name}!")
             return
     print(f'Congratulations, {name}!')
 
@@ -121,8 +124,9 @@ def brain_progression():
             print('Correct!')
             i += 1
         else:
-            print(f''''{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.
-Let's try again, {name}!''')
+            print(f"'{answer}' is wrong answer ;(. "
+                  f"Correct answer was '{correct_answer}'.\n"
+                  f"Let's try again, {name}!")
             return
     print(f'Congratulations, {name}!')
 
@@ -154,7 +158,8 @@ def brain_prime():
             print('Correct!')
             x += 1
         else:
-            print(f''''{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.
-Let's try again, {name}!''')
+            print(f"'{answer}' is wrong answer ;(. "
+                  f"Correct answer was '{correct_answer}'.\n"
+                  f"Let's try again, {name}!")
             return
     print(f'Congratulations, {name}!')
