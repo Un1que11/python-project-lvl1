@@ -1,11 +1,15 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "Here are some interesting logic games."
+classifiers = [
+    "Topic :: Games/Entertainment :: Puzzle Games"
+]
 authors = ["Mikhail <crazyminer398@gmail.com>"]
 packages = [
   { include = "brain_games" },
 ]
+repository = "https://github.com/Un1que11/python-project-lvl1.git"
 
 [tool.poetry.dependencies]
 python = "^3.8"
