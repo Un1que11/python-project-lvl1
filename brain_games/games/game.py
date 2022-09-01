@@ -104,16 +104,17 @@ def brain_gcd():
 def brain_progression():
     name = welcome_user()
     print('What number is missing in the progression?')
-    i = 0
-    while i < 3:
+    x = 0
+    while x < 3:
         item_position = randint(0, 9)
         first_number = randint(0, 20)
         regularity = randint(1, 15)
         arithmetic_progression = ''
-        counter = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
-        for i in counter:
+        i = 0
+        while i < 10:
             arithmetic_progression += str(first_number) + ' '
             first_number += regularity
+            i += 1
         arithmetic_progression = arithmetic_progression.split()
         correct_answer = arithmetic_progression[item_position]
         arithmetic_progression[item_position] = '..'
@@ -122,21 +123,13 @@ def brain_progression():
         answer = answers()
         if str(answer) == correct_answer:
             print('Correct!')
-            i += 1
+            x += 1
         else:
             print(f"'{answer}' is wrong answer ;(. "
                   f"Correct answer was '{correct_answer}'.\n"
                   f"Let's try again, {name}!")
             return
     print(f'Congratulations, {name}!')
-
-
-def prime_number():
-    number = randint(0, 100)
-    i = 2
-    while number % i != 0:
-        i += 1
-    return i == number, number
 
 
 def brain_prime():
