@@ -1,8 +1,10 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = "Here are some interesting logic games."
+description = "Brain games include five logic games: brain even, brain calc, brain gcd, brain progression, brain prime"
 classifiers = [
+    "Development Status :: 4 - Beta",
+	"Programming Language :: Python",
     "Topic :: Games/Entertainment :: Puzzle Games"
 ]
 authors = ["Mikhail <crazyminer398@gmail.com>"]
