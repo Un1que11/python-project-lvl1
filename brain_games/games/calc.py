@@ -1,5 +1,4 @@
 from random import randint, choice
-from brain_games.game_engine.game_engine import start_the_game
 
 
 operators = '+', '-', '*'
@@ -18,7 +17,3 @@ def calc_logic():
     else:
         correct_answer = first_number * second_number
     return str(correct_answer), question
-
-
-def calc_game():
-    start_the_game(rule, calc_logic)
