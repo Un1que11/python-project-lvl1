@@ -20,7 +20,3 @@ def gcd_logic():
     question = str(first_number) + ' ' + str(second_number)
     correct_answer = gcd_of_two_numbers(first_number, second_number)
     return str(correct_answer), question
-
-
-def gcd_game():
-    start_the_game(rule, gcd_logic)

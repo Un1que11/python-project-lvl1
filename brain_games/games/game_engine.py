@@ -18,8 +18,7 @@ def start_the_game(rule, what_kind_of_game):
             game_count += 1
             print('Correct!')
         else:
-            print("'{}' is wrong answer ;(. " 
-                  "Correct answer was '{}'\n"
+            print("'{}' is wrong answer ;(. Correct answer was '{}'\n"
                   "Let's try again, {}!".format(user_answer,
                                                 correct_answer,
                                                 username))
