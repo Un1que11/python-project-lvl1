@@ -1,10 +1,12 @@
 from random import randint
 
 
-rule = 'Find the greatest common divisor of given numbers.'
+RULES = 'Find the greatest common divisor of given numbers.'
+LOWER_LIMIT = 1
+UPPER_LIMIT = 100
 
 
-def gcd_of_two_numbers(first_number, second_number):
+def calculates_the_gcd(first_number, second_number):
     while first_number != 0 and second_number != 0:
         if first_number > second_number:
             first_number = first_number % second_number
@@ -14,9 +16,9 @@ def gcd_of_two_numbers(first_number, second_number):
     return gcd
 
 
-def gcd_logic():
-    first_number = randint(0, 100)
-    second_number = randint(0, 100)
+def generate_gcd_mode():
+    first_number = randint(LOWER_LIMIT, UPPER_LIMIT)
+    second_number = randint(LOWER_LIMIT, UPPER_LIMIT)
     question = str(first_number) + ' ' + str(second_number)
-    correct_answer = gcd_of_two_numbers(first_number, second_number)
+    correct_answer = calculates_the_gcd(first_number, second_number)
     return str(correct_answer), question

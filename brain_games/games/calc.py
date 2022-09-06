@@ -1,14 +1,16 @@
 from random import randint, choice
 
 
-operators = '+', '-', '*'
-rule = 'What is the result of the expression?'
+OPERATORS = '+', '-', '*'
+RULES = 'What is the result of the expression?'
+LOWER_LIMIT = 1
+UPPER_LIMIT = 100
 
 
-def calc_logic():
-    first_number = randint(0, 100)
-    operator = choice(operators)
-    second_number = randint(0, 100)
+def generate_calc_mode():
+    first_number = randint(LOWER_LIMIT, UPPER_LIMIT)
+    operator = choice(OPERATORS)
+    second_number = randint(LOWER_LIMIT, UPPER_LIMIT)
     question = str(first_number) + ' ' + operator + ' ' + str(second_number)
     if operator == '+':
         correct_answer = first_number + second_number

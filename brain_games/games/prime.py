@@ -1,7 +1,9 @@
 from random import randint
 
 
-rule = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+LOWER_LIMIT = 1
+UPPER_LIMIT = 100
 
 
 def is_the_number_prime(number):
@@ -13,7 +15,10 @@ def is_the_number_prime(number):
     return True
 
 
-def prime_logic():
-    question = randint(0, 100)
-    correct_answer = 'yes' if is_the_number_prime(question) is True else 'no'
+def generate_prime_mode():
+    question = randint(LOWER_LIMIT, UPPER_LIMIT)
+    if is_the_number_prime(question):
+        correct_answer = 'yes'
+    else:
+        correct_answer = 'no'
     return correct_answer, question
