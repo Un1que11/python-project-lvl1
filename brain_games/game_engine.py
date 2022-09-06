@@ -1,17 +1,17 @@
 import prompt
 
 
-num_of_games = 3
+NUM_OF_GAMES = 3
 
 
-def start_the_game(rule, what_kind_of_game):
+def start_the_game(rule, game_mode):
     print('Welcome to the Brain Games!')
     username = prompt.string('May I have your name? ')
     print('Hello, {}!'.format(username))
     print(rule)
     game_count = 0
-    while game_count < num_of_games:
-        correct_answer, question = what_kind_of_game()
+    while game_count < NUM_OF_GAMES:
+        correct_answer, question = game_mode()
         print('Question: {}'.format(question))
         user_answer = prompt.string('Your answer: ')
         if user_answer == correct_answer:
