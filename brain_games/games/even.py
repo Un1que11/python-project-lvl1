@@ -7,9 +7,7 @@ UPPER_LIMIT = 100
 
 
 def is_the_number_even(number):
-    if number % 2 == 0:
-        return True
-    return False
+    return number % 2 == 0
 
 
 def generate_even_mode():
