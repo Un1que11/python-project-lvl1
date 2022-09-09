@@ -15,7 +15,7 @@ def is_the_number_prime(number):
     return True
 
 
-def generate_prime_mode():
+def essence_and_solution_of_prime():
     question = randint(LOWER_LIMIT, UPPER_LIMIT)
     if is_the_number_prime(question):
         correct_answer = 'yes'

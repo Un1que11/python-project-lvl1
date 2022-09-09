@@ -16,7 +16,7 @@ def calculates_the_gcd(first_number, second_number):
     return gcd
 
 
-def generate_gcd_mode():
+def essence_and_solution_of_gcd():
     first_number = randint(LOWER_LIMIT, UPPER_LIMIT)
     second_number = randint(LOWER_LIMIT, UPPER_LIMIT)
     question = str(first_number) + ' ' + str(second_number)

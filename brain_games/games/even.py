@@ -10,7 +10,7 @@ def is_the_number_even(number):
     return number % 2 == 0
 
 
-def generate_even_mode():
+def essence_and_solution_of_even():
     question = randint(LOWER_LIMIT, UPPER_LIMIT)
     if is_the_number_even(question):
         correct_answer = 'yes'

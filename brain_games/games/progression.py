@@ -8,35 +8,27 @@ DIFFERENCE_LOWER_LIMIT = 1
 DIFFERENCE_UPPER_LIMIT = 15
 TERM_LOWER_LIMIT = 0
 TERM_UPPER_LIMIT = 20
-LENGTH_LOWER_LIMIT = 5
-LENGTH_UPPER_LIMIT = 10
 
 
 def creating_arithmetic_sequence(initial_term, common_difference,
-                                 progression_length):
-    arithmetic_progression = ''
-    i = 0
-    while i < progression_length:
-        arithmetic_progression += str(initial_term) + ' '
-        initial_term += common_difference
-        i += 1
-    return arithmetic_progression.split()
+                                 end_of_progression):
+    return list(range(initial_term, end_of_progression, common_difference))
 
 
 def creating_string_progression(progression, index_of_missing_character):
     progression[index_of_missing_character] = '..'
-    progression = ' '.join(progression)
+    progression = ' '.join(map(str, progression))
     return progression
 
 
-def generate_progression_mode():
+def essence_and_solution_of_progression():
     item_position = randint(ITEM_LOWER_LIMIT, ITEM_UPPER_LIMIT)
     initial_term = randint(TERM_LOWER_LIMIT, TERM_UPPER_LIMIT)
     common_difference = randint(DIFFERENCE_LOWER_LIMIT, DIFFERENCE_UPPER_LIMIT)
-    progression_length = randint(LENGTH_LOWER_LIMIT, LENGTH_UPPER_LIMIT)
+    end_of_progression = initial_term + common_difference * 10
     progression = creating_arithmetic_sequence(initial_term,
                                                common_difference,
-                                               progression_length)
+                                               end_of_progression)
     correct_answer = progression[item_position]
     progression = creating_string_progression(progression, item_position)
     question = progression
