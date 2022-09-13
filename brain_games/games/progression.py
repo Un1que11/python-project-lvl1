@@ -3,7 +3,7 @@ from random import randint
 
 RULES = 'What number is missing in the progression?'
 ITEM_LOWER_LIMIT = 0
-ITEM_UPPER_LIMIT = 4
+ITEM_UPPER_LIMIT = 10
 DIFFERENCE_LOWER_LIMIT = 1
 DIFFERENCE_UPPER_LIMIT = 15
 TERM_LOWER_LIMIT = 0

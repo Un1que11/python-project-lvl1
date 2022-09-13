@@ -20,5 +20,5 @@ def save_question_and_correct_answer_of_gcd():
     first_number = randint(LOWER_LIMIT, UPPER_LIMIT)
     second_number = randint(LOWER_LIMIT, UPPER_LIMIT)
     question = str(first_number) + ' ' + str(second_number)
-    correct_answer = calculates_the_gcd(first_number, second_number)
+    correct_answer = calculate_gcd(first_number, second_number)
     return str(correct_answer), question
