@@ -6,7 +6,7 @@ LOWER_LIMIT = 1
 UPPER_LIMIT = 100
 
 
-def calculates_the_gcd(first_number, second_number):
+def calculate_gcd(first_number, second_number):
     while first_number != 0 and second_number != 0:
         if first_number > second_number:
             first_number = first_number % second_number
@@ -16,7 +16,7 @@ def calculates_the_gcd(first_number, second_number):
     return gcd
 
 
-def essence_and_solution_of_gcd():
+def save_question_and_correct_answer_of_gcd():
     first_number = randint(LOWER_LIMIT, UPPER_LIMIT)
     second_number = randint(LOWER_LIMIT, UPPER_LIMIT)
     question = str(first_number) + ' ' + str(second_number)

@@ -6,7 +6,7 @@ LOWER_LIMIT = 1
 UPPER_LIMIT = 100
 
 
-def is_the_number_prime(number):
+def is_prime(number):
     if number == 0 or number == 1:
         return False
     for i in range(2, number // 2 + 1):
@@ -15,9 +15,9 @@ def is_the_number_prime(number):
     return True
 
 
-def essence_and_solution_of_prime():
+def save_question_and_correct_answer_of_prime():
     question = randint(LOWER_LIMIT, UPPER_LIMIT)
-    if is_the_number_prime(question):
+    if is_prime(question):
         correct_answer = 'yes'
     else:
         correct_answer = 'no'

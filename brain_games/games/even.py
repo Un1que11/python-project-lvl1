@@ -6,13 +6,13 @@ LOWER_LIMIT = 1
 UPPER_LIMIT = 100
 
 
-def is_the_number_even(number):
+def is_even(number):
     return number % 2 == 0
 
 
-def essence_and_solution_of_even():
+def save_question_and_correct_answer_of_even():
     question = randint(LOWER_LIMIT, UPPER_LIMIT)
-    if is_the_number_even(question):
+    if is_even(question):
         correct_answer = 'yes'
     else:
         correct_answer = 'no'

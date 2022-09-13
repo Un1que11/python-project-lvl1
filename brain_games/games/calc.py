@@ -7,7 +7,7 @@ LOWER_LIMIT = 1
 UPPER_LIMIT = 100
 
 
-def essence_and_solution_of_calc():
+def save_question_and_correct_answer_of_calc():
     first_number = randint(LOWER_LIMIT, UPPER_LIMIT)
     operator = choice(OPERATORS)
     second_number = randint(LOWER_LIMIT, UPPER_LIMIT)
