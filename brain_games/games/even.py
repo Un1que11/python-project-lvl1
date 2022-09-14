@@ -10,7 +10,7 @@ def is_even(number):
     return number % 2 == 0
 
 
-def save_question_and_correct_answer_of_even():
+def get_question_and_correct_answer():
     question = randint(LOWER_LIMIT, UPPER_LIMIT)
     if is_even(question):
         correct_answer = 'yes'

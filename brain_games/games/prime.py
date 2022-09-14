@@ -15,7 +15,7 @@ def is_prime(number):
     return True
 
 
-def save_question_and_correct_answer_of_prime():
+def get_question_and_correct_answer():
     question = randint(LOWER_LIMIT, UPPER_LIMIT)
     if is_prime(question):
         correct_answer = 'yes'

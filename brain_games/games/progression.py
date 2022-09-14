@@ -22,7 +22,7 @@ def create_string_progression(progression, index_of_missing_character):
     return progression
 
 
-def save_question_and_correct_answer_of_progression():
+def get_question_and_correct_answer():
     item_position = randint(ITEM_LOWER_LIMIT, ITEM_UPPER_LIMIT)
     initial_term = randint(TERM_LOWER_LIMIT, TERM_UPPER_LIMIT)
     common_difference = randint(DIFFERENCE_LOWER_LIMIT, DIFFERENCE_UPPER_LIMIT)
