@@ -16,7 +16,7 @@ def create_arithmetic_sequence(initial_term, common_difference,
     return list(range(initial_term, end_of_progression, common_difference))
 
 
-def create_string_progression(progression, index_of_missing_character):
+def stringify_progression(progression, index_of_missing_character):
     progression[index_of_missing_character] = '..'
     progression = ' '.join(map(str, progression))
     return progression
@@ -31,6 +31,6 @@ def get_question_and_correct_answer():
                                              common_difference,
                                              end_of_progression)
     correct_answer = progression[item_position]
-    progression = create_string_progression(progression, item_position)
+    progression = stringify_progression(progression, item_position)
     question = progression
     return str(correct_answer), question
